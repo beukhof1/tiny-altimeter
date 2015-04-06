@@ -201,9 +201,9 @@ void loop() {
 
   delay(50);
 }
-/* -------------------- fonctions --------------------  */
+/* -------------------- functions --------------------  */
 
-// Affiche les données d'un ecran
+// Display screen data
 void showScreen(String label, double value, int unit) {
   display.clearDisplay(); 
   display.setCursor(0,0);
@@ -212,7 +212,7 @@ void showScreen(String label, double value, int unit) {
   display.display();  
 }
 
-// Enregistre un echantillon de pression
+// Saves sample pressure
 void savePressureSample(float pressure) {
   if (indexBfr == MAX_SAMPLES)  {
     indexBfr = 0;
@@ -221,7 +221,7 @@ void savePressureSample(float pressure) {
   samplesBuffer[indexBfr++] = pressure; 
 }
 
-// Retourne la moyenne des echantillons de pression
+// Returns the average pressure samples
 float getPressureAverage() {
   double sum = 0;
   for (int i =0; i<MAX_SAMPLES; i++) {
@@ -230,7 +230,7 @@ float getPressureAverage() {
   return sum/MAX_SAMPLES;
 }
 
-// Enregistre les altitudes Min & Max
+// Save altitude Min & Max
 void setAltiMinMax() {
   if (altitude > altiMax) altiMax = altitude;
   if (altitude < altiMin) altiMin = altitude;
@@ -238,7 +238,7 @@ void setAltiMinMax() {
 void resetAltiMinMax() {
   altiMax = altiMin = altitude;
 }
-// Gestion du bouton relaché
+// Management release the button
 void handleButtonReleaseEvents(Button &btn) {
   //debugMsg = "Release";
   if (!longPush) {
@@ -255,7 +255,7 @@ void handleButtonReleaseEvents(Button &btn) {
   longPush = false;
 }
 
-// Gestion de l'appui prolongé sur le bouton
+// Management support extended on the button
 void handleButtonHoldEvents(Button &btn) {
   //debugMsg = "Hold";
   longPush = true;
@@ -270,7 +270,7 @@ void handleButtonHoldEvents(Button &btn) {
   }
 }
 
-// Affiche un caractére en x, y
+// Displays a character x, y
 void drawCar(int sx, int sy, int num, uint8_t *font, int fw, int fh, int color) {
   byte row;
   for(int y=0; y<fh; y++) {
@@ -283,7 +283,7 @@ void drawCar(int sx, int sy, int num, uint8_t *font, int fw, int fh, int color) 
   }
 }
 
-// Affiche un gros caractére en x, y
+// Displays a big character x, y
 void drawBigCar(int sx, int sy, int num) {
   drawCar(sx, sy, num, Font24x40, 24, 40, WHITE) ;
 }
@@ -297,7 +297,7 @@ void drawSymbol(int sx, int sy, int num) {
   drawCar(sx, sy, num, Symbol, 16, 16, WHITE) ;
 }
 
-// Affiche un nombre decimal
+// Displays a decimal number
 void drawFloatValue(int sx, int sy, double val, int unit) {
   char charBuf[15];
   if (val < 10000) {
