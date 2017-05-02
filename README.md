@@ -1,7 +1,7 @@
 The small 128 × 64 OLED display offers good readability even in bright light. It does not consume a lot of energy and seems ideal for outdoor use. Associated with a pressure sensor BMP180 module, it’s relatively easy to achieve a very compact altimeter for hiking.
 
 Orginal project link:
-http://electro.olganet.com/2014/03/29/tiny-altimeter-oled/
++https://keeptronic.wordpress.com/2017/01/09/tiny-altimeter/
 
 Parts:<html><body><p>
 <a href="http://www.banggood.com/Wholesale-New-Ver-Pro-Mini-ATMEGA328-328p-5V-16MHz-Arduino-Compatible-Nano-Size-p-68534.html">Arduino Pro Mini $3.08</a></p></body></html><html><body><p>
@@ -14,10 +14,10 @@ Parts:<html><body><p>
 
 
 
-<img src="http://electro.olganet.com/wp-content/uploads/2014/03/diagramme_tiny_altimeter.jpg">
+<img src="img src="https://keeptronic.files.wordpress.com/2017/01/diagramme_tiny_altimeter.jpg">
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mMiMNTv25Bw" frameborder="0" allowfullscreen></iframe>
+Video review:
+https://www.youtube.com/embed/mMiMNTv25Bw
 
 
 
