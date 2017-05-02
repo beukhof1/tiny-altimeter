@@ -14,7 +14,7 @@ Parts:<html><body><p>
 
 
 
-<img src="img src="https://keeptronic.files.wordpress.com/2017/01/diagramme_tiny_altimeter.jpg">
+<img src="https://keeptronic.files.wordpress.com/2017/01/diagramme_tiny_altimeter.jpg">
 
 Video review:
 https://www.youtube.com/embed/mMiMNTv25Bw
